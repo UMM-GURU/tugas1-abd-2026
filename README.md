@@ -65,6 +65,141 @@ Target kualitas tertinggi adalah analisis yang efisien, terdokumentasi, dapat di
 └── README.md
 ```
 
+# Tugas 1 Analisis Big Data 2026
+
+## Persiapan GitHub
+
+### 1. Fork Repository Tugas
+
+Fork repository berikut ke akun GitHub masing-masing:
+
+https://github.com/UMM-GURU/tugas1-abd-2026.git
+
+Langkah-langkah:
+
+1. Login ke GitHub.
+2. Buka repository tugas.
+3. Klik tombol **Fork** di pojok kanan atas.
+4. Tunggu hingga GitHub membuat salinan repository ke akun Anda.
+
+Setelah selesai, Anda akan memiliki repository dengan alamat seperti:
+
+```text
+https://github.com/USERNAME-ANDA/tugas1-abd-2026.git
+```
+
+---
+
+### 2. Clone Repository Hasil Fork
+
+Buka Terminal, Git Bash, atau Command Prompt lalu jalankan:
+
+```bash
+git clone https://github.com/USERNAME-ANDA/tugas1-abd-2026.git
+cd tugas1-abd-2026
+```
+
+Ganti `USERNAME-ANDA` dengan username GitHub Anda.
+
+---
+
+## Menjalankan Project
+
+Pastikan Docker sudah terpasang pada komputer Anda.
+
+### Build Docker Image
+
+```bash
+docker build -t tugas1-bigdata .
+```
+
+### Jalankan Container
+
+```bash
+docker run --rm -p 8888:8888 -v "$(pwd)":/home/jovyan/work tugas1-bigdata
+```
+
+### Membuka JupyterLab
+
+Buka browser dan akses:
+
+http://localhost:8888/lab
+
+> **Catatan:** Konfigurasi Dockerfile menjalankan JupyterLab tanpa password atau token untuk penggunaan lokal. Jangan gunakan konfigurasi ini pada server atau jaringan publik.
+
+---
+
+## Menyiapkan Dataset
+
+1. Letakkan dataset yang akan digunakan pada folder:
+
+```text
+data/raw/
+```
+
+2. Buka notebook profiling atau notebook yang digunakan.
+3. Sesuaikan nilai variabel `DATA_PATH` agar mengarah ke file dataset yang Anda gunakan.
+
+Contoh:
+
+```python
+DATA_PATH = "data/raw/nama_dataset.csv"
+```
+
+---
+
+## Mengerjakan Tugas
+
+1. Baca seluruh instruksi yang terdapat pada notebook.
+2. Kerjakan setiap bagian sesuai perintah.
+3. Simpan perubahan secara berkala.
+
+---
+
+## Commit Perubahan
+
+Setelah tugas selesai dikerjakan, simpan hasil pekerjaan ke Git menggunakan perintah berikut:
+
+```bash
+git add .
+git commit -m "Menyelesaikan Tugas 1 Analisis Big Data"
+```
+
+Anda dapat mengganti pesan commit sesuai kebutuhan.
+
+---
+
+## Push ke Repository GitHub
+
+Kirim hasil pekerjaan ke repository GitHub milik Anda:
+
+```bash
+git push origin main
+```
+
+Apabila branch utama bernama `master`, gunakan:
+
+```bash
+git push origin master
+```
+
+---
+
+## Verifikasi Pengumpulan
+
+1. Buka repository GitHub milik Anda.
+2. Pastikan file yang telah dikerjakan sudah muncul.
+3. Pastikan terdapat minimal satu commit hasil pekerjaan Anda.
+4. Salin URL repository Anda untuk keperluan penilaian jika diminta dosen.
+
+Contoh URL repository:
+
+```text
+https://github.com/USERNAME-ANDA/tugas1-abd-2026
+```
+
+---
+
 ## Menjalankan Project
 
 ```bash
