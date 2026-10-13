@@ -1,6 +1,11 @@
 # Tugas 1: Eksplorasi dan Analisis Dataset Besar Indonesia
+Nama: Selma Kadir Pelu
+NIM: 202310370311297
+Kelas: Analisi Big Data B
 
-Template untuk Tugas 1 mata kuliah Analisis Big Data. Setelah repository GitHub Classroom dibuat, ubah nama repository menjadi `tugas1-[username_github]`.
+Template untuk Tugas 1 mata kuliah Analisis Big Data. Setelah repository GitHub Classroom dibuat, ubah nama repository menjadi `tugas1-[git clone https://github.com/Selmapelu/tugas1-abd-2026.git
+cd tugas1-abd-2026
+]`.
 
 ## Milestone
 
