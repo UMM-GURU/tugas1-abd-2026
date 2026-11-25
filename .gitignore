@@ -27,3 +27,7 @@ output/*.json
 # Sistem operasi dan editor
 .DS_Store
 .vscode/
+
+# Direktori pengumpulan tugas mahasiswa untuk penilaian
+penilaian/pengumpulan/*
+!penilaian/pengumpulan/.gitkeep
